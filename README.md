@@ -8,6 +8,7 @@ This is a simple app to demonstrate all kinds of ways to implement async in a Re
 1. [Writing Async Code Inline](./async-code-inline)
 1. [Extracting Async Action Creator](./async-action-creator)
 1. [Use redux-thunk](./redux-thunk)
+1. [Use redux-saga](./redux-saga) - to be finished.
 
 
 ## Motivation
