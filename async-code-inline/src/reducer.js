@@ -1,4 +1,4 @@
-export default (state = { text: '' }, action) => {
+const reducer = (state = { text: '' }, action) => {
   switch (action.type) {
     case 'SHOW_NOTIFICATION':
       return { text: action.text }
@@ -8,3 +8,5 @@ export default (state = { text: '' }, action) => {
       return state
   }
 }
+
+export default reducer
