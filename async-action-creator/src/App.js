@@ -21,7 +21,9 @@ class App extends Component {
           <button onClick={() => showNotificationWithTimeout(this.props.dispatch, 'Hello')}>Show "Hello"</button>
           &nbsp;
           <button onClick={() => showNotificationWithTimeout(this.props.dispatch, 'Async')}>Show "Async"</button>
-          <h1>{this.props.text}</h1>
+          {this.props.messages.map((message, index) => {
+            return <h1 key={index}>{message}</h1>;
+          })}
         </div>
       </div>
     );
@@ -30,7 +32,7 @@ class App extends Component {
 
 App = connect((state) => {
   return {
-    text: state.text,
+    messages: state.notifications.map((notification) => notification.text),
   };
 })(App);
 
