@@ -17,9 +17,9 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <div>
-          <button onClick={() => showNotificationWithTimeout(this.props.dispatch, 'Hello')}>Show "Hello"</button>
+          <button onClick={() => this.props.dispatch(showNotificationWithTimeout('Hello'))}>Show "Hello"</button>
           &nbsp;
-          <button onClick={() => showNotificationWithTimeout(this.props.dispatch, 'Async')}>Show "Async"</button>
+          <button onClick={() => this.props.dispatch(showNotificationWithTimeout('Async'))}>Show "Async"</button>
           {this.props.notifications.map((notification, index) => {
             return <h1 key={notification.id}>{notification.text}</h1>
           })}
