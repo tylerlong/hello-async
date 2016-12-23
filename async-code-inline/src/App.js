@@ -30,9 +30,9 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <div>
-          <button onClick={() => this.showNotificationWithTimeout('Hello')}>Show Hello</button>
+          <button onClick={() => this.showNotificationWithTimeout('Hello')}>Show "Hello"</button>
           &nbsp;
-          <button onClick={() => this.showNotificationWithTimeout('Async')}>Show Async</button>
+          <button onClick={() => this.showNotificationWithTimeout('Async')}>Show "Async"</button>
           <h1>{this.props.text}</h1>
         </div>
       </div>

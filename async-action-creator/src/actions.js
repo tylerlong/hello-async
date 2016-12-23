@@ -1,10 +1,19 @@
-const showNotification = (text) => {
-    return { type: 'SHOW_NOTIFICATION', text };
+const showNotification = (id, text) => {
+    return { type: 'SHOW_NOTIFICATION', id, text };
+};
+
+const hideNotification = (id) => {
+    return { type: 'HIDE_NOTIFICATION', id };
+};
+
+let nextNotificationId = 0;
+const showNotificationWithTimeout = (dispatch, text) => {
+  const id = nextNotificationId++;
+  dispatch(showNotification(id, text));
+  setTimeout(() => {
+    dispatch(hideNotification(id));
+  }, 5000);
 };
 
 
-const hideNotification = () => {
-    return { type: 'HIDE_NOTIFICATION' };
-}
-
-export { showNotification, hideNotification };
+export { showNotificationWithTimeout };

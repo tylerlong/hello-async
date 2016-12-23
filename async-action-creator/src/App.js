@@ -3,22 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 
 import { connect } from 'react-redux';
-import {showNotification, hideNotification} from './actions';
+import { showNotificationWithTimeout } from './actions';
 
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.showNotificationWithTimeout = this.showNotificationWithTimeout.bind(this);
-  }
-
-  showNotificationWithTimeout(text) {
-    this.props.showNotification(text);
-    setTimeout(() => {
-      this.props.hideNotification();
-    }, 5000);
-  }
-
   render() {
     return (
       <div className="App">
@@ -30,9 +18,9 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <div>
-          <button onClick={() => this.showNotificationWithTimeout('Hello')}>Show Hello</button>
+          <button onClick={() => showNotificationWithTimeout(this.props.dispatch, 'Hello')}>Show "Hello"</button>
           &nbsp;
-          <button onClick={() => this.showNotificationWithTimeout('Async')}>Show Async</button>
+          <button onClick={() => showNotificationWithTimeout(this.props.dispatch, 'Async')}>Show "Async"</button>
           <h1>{this.props.text}</h1>
         </div>
       </div>
@@ -43,15 +31,6 @@ class App extends Component {
 App = connect((state) => {
   return {
     text: state.text,
-  };
-}, (dispatch) => {
-  return {
-    showNotification: (text) => {
-      dispatch(showNotification(text));
-    },
-    hideNotification: () => {
-      dispatch(hideNotification());
-    },
   };
 })(App);
 
