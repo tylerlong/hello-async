@@ -16,17 +16,17 @@ This repo is inspired by [this answer](http://stackoverflow.com/questions/354114
 
 The accepted answer is awesome.
 
-> Once again [DanAbramov](http://stackoverflow.com/users/458193/dan-abramov) shows how thoughtful the Redux design choices are, and how he excels in explaining them.
+> Once again [Dan Abramov](http://stackoverflow.com/users/458193/dan-abramov) shows how thoughtful the Redux design choices are, and how he excels in explaining them.
 
 But there is something missing:
 
-1. no runnable sample project, just some code snippets
+1. no runnable sample projects, just some code snippets
 1. no sample code for other alternatives, such as:
     1. [redux-saga](https://github.com/yelouafi/redux-saga)
 
 This repo is trying to add the missing things:
 
-1. Runnable projects. You can download and run them in 3 minutes.
+1. Runnable projects. You can download and run them without modification.
 1. Provide sample code for redux-saga
 
 
