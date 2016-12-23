@@ -1,10 +1,10 @@
 export default (state = { text: '' }, action) => {
-    switch (action.type) {
-        case 'SHOW_NOTIFICATION':
-            return { text: action.text };
-        case 'HIDE_NOTIFICATION':
-            return { text: '' };
-        default:
-            return state;
-    }
+  switch (action.type) {
+    case 'SHOW_NOTIFICATION':
+      return { text: action.text }
+    case 'HIDE_NOTIFICATION':
+      return { text: '' }
+    default:
+      return state
+  }
 }

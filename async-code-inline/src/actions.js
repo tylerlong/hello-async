@@ -1,10 +1,9 @@
 const showNotification = (text) => {
-    return { type: 'SHOW_NOTIFICATION', text };
-};
-
-
-const hideNotification = () => {
-    return { type: 'HIDE_NOTIFICATION' };
+  return { type: 'SHOW_NOTIFICATION', text }
 }
 
-export { showNotification, hideNotification };
+const hideNotification = () => {
+  return { type: 'HIDE_NOTIFICATION' }
+}
+
+export { showNotification, hideNotification }
