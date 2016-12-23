@@ -43,15 +43,7 @@ const ConnectedApp = connect((state) => {
   return {
     text: state.text
   }
-}, (dispatch) => {
-  return {
-    showNotification: (text) => {
-      dispatch(showNotification(text))
-    },
-    hideNotification: () => {
-      dispatch(hideNotification())
-    }
-  }
-})(App)
+},
+{ showNotification, hideNotification })(App)
 
 export default ConnectedApp
