@@ -1,14 +1,23 @@
 # Hello Async
 
-This is a simple app to demonstrate all kinds of ways to implement async in a React + Redux app.
+To demonstrate all kinds of ways to implement async with React & Redux.
 
 
-## Diffrent ways to implement async in a React + Redux app
+## Diffrent ways to implement async
 
 1. [Writing Async Code Inline](./async-code-inline)
 1. [Extracting Async Action Creator](./async-action-creator)
 1. [Use redux-thunk](./redux-thunk)
 1. [Use redux-saga](./redux-saga) - to be finished.
+
+
+## About the demo projects
+
+In each demo project, we try to implement a notification feature:
+
+- Click buttons to show notifications
+- Each notification auto dismiss after 5 seconds
+- Multiple notifications are allowed simultaneously
 
 
 ## Motivation
@@ -41,3 +50,8 @@ cd  hello-async/async-code-inline
 yarn install
 yarn start
 ```
+
+
+## todo
+
+Write readme for each projects. List Pros, Cons and implementation details.
