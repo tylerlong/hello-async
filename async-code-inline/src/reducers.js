@@ -1,12 +1,18 @@
-const reducer = (state = { text: '' }, action) => {
+import { combineReducers } from 'redux'
+
+const notifications = (state = [], action) => {
   switch (action.type) {
     case 'SHOW_NOTIFICATION':
-      return { text: action.text }
+      return [...state, { id: action.id, text: action.text }]
     case 'HIDE_NOTIFICATION':
-      return { text: '' }
+      return state.filter((notification) => notification.id !== action.id)
     default:
       return state
   }
 }
 
-export default reducer
+const combinedReducers = combineReducers({
+  notifications
+})
+
+export default combinedReducers

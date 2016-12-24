@@ -5,6 +5,8 @@ import logo from './logo.svg'
 import './App.css'
 import { showNotification, hideNotification } from './actions'
 
+let nextNotificationId = 0
+
 class App extends Component {
   constructor (props) {
     super(props)
@@ -12,9 +14,10 @@ class App extends Component {
   }
 
   showNotificationWithTimeout (text) {
-    this.props.showNotification(text)
+    const id = nextNotificationId++
+    this.props.showNotification(text, id)
     setTimeout(() => {
-      this.props.hideNotification()
+      this.props.hideNotification(id)
     }, 5000)
   }
 
@@ -32,7 +35,9 @@ class App extends Component {
           <button onClick={() => this.showNotificationWithTimeout('Hello')}>Show "Hello"</button>
           &nbsp;
           <button onClick={() => this.showNotificationWithTimeout('Async')}>Show "Async"</button>
-          <h1>{this.props.text}</h1>
+          {this.props.notifications.map((notification) => {
+            return <h1 key={notification.id}>{notification.text}</h1>
+          })}
         </div>
       </div>
     )
@@ -41,7 +46,7 @@ class App extends Component {
 
 const ConnectedApp = connect((state) => {
   return {
-    text: state.text
+    notifications: state.notifications
   }
 },
 { showNotification, hideNotification })(App)
