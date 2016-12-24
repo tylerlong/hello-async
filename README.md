@@ -7,17 +7,21 @@ To demonstrate all kinds of ways to implement async with React & Redux.
 
 1. [Writing Async Code Inline](./async-code-inline)
 1. [Extracting Async Action Creator](./async-action-creator)
-1. [Use redux-thunk](./redux-thunk)
-1. [Use redux-saga](./redux-saga) - to be finished.
+1. [Use Redux Thunk](./redux-thunk)
+
+
+## Oncoming
+
+1. [Use Redux Saga](./redux-saga)
 
 
 ## About the demo projects
 
 In each demo project, we try to implement a notification feature:
 
-- Click buttons to show notifications
-- Each notification auto dismiss after 5 seconds
-- Multiple notifications are allowed simultaneously
+- Click buttons to show notifications.
+- Each notification auto dismiss after 5 seconds.
+- Multiple notifications are allowed simultaneously.
 
 
 ## Motivation
@@ -30,14 +34,14 @@ The accepted answer is awesome.
 
 But there is something missing:
 
-1. no runnable sample projects, just some code snippets
-1. no sample code for other alternatives, such as:
-    1. [redux-saga](https://github.com/yelouafi/redux-saga)
+1. No runnable sample projects, just some code snippets.
+1. No sample code for other alternatives, such as:
+    1. [Redux Saga](https://github.com/yelouafi/redux-saga)
 
 This repo is trying to add the missing things:
 
 1. Runnable projects. You can download and run them without modification.
-1. Provide sample code for redux-saga
+1. Provide sample code for Redux Saga.
 
 
 ## How to run
@@ -50,8 +54,3 @@ cd  hello-async/async-code-inline
 yarn install
 yarn start
 ```
-
-
-## todo
-
-Write readme for each projects. List Pros, Cons and implementation details.
