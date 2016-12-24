@@ -2,6 +2,8 @@
 
 To demonstrate all kinds of ways to implement async with React & Redux.
 
+If you like this repository, please :star: it and help to spread the word! :heart:
+
 
 ## Diffrent ways to implement async
 
@@ -14,7 +16,12 @@ To demonstrate all kinds of ways to implement async with React & Redux.
 ## Oncoming
 
 1. [Use Redux Loop](https://github.com/redux-loop/redux-loop)
-1. Suggest a new solution by [creating an issue](https://github.com/tylerlong/hello-async/issues/new?title=Could%20you%20please%20add%20a%20sample%20project%20for%20%3Cxxx%3E%20?).
+
+
+## My favorite solution isn't in the list
+
+1. :fork_and_knife: Fork this project and submit a PR.
+1. :point_right: [creating an issue](https://github.com/tylerlong/hello-async/issues/new?title=Could%20you%20please%20add%20a%20sample%20project%20for%20%3Cxxx%3E%20?).
 
 
 ## About the demo projects
