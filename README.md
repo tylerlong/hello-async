@@ -8,11 +8,13 @@ To demonstrate all kinds of ways to implement async with React & Redux.
 1. [Writing Async Code Inline](./async-code-inline)
 1. [Extracting Async Action Creator](./async-action-creator)
 1. [Use Redux Thunk](./redux-thunk)
+1. [Use Redux Saga](./redux-saga)
 
 
 ## Oncoming
 
-1. [Use Redux Saga](./redux-saga)
+1. [Use Redux Loop](https://github.com/redux-loop/redux-loop)
+1. Suggest a new solution by [creating an issue](https://github.com/tylerlong/hello-async/issues/new?title=Could%20you%20please%20add%20a%20sample%20project%20for%20%3Cxxx%3E%20?).
 
 
 ## About the demo projects
@@ -41,7 +43,10 @@ But there is something missing:
 This repo is trying to add the missing things:
 
 1. Runnable projects. You can download and run them without modification.
-1. Provide sample code for Redux Saga.
+1. Provide sample code for more alternatives:
+    - Redux Saga
+    - Redux Loop
+    - ...
 
 
 ## How to run
