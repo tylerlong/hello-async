@@ -6,4 +6,8 @@ const hideNotification = (id) => {
   return { type: 'HIDE_NOTIFICATION', id }
 }
 
-export { showNotification, hideNotification }
+const showNotificationWithTimeout = (text) => {
+  return { type: 'SHOW_NOTIFICATION_WITH_TIMEOUT', text }
+}
+
+export { showNotification, hideNotification, showNotificationWithTimeout }

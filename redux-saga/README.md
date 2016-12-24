@@ -6,13 +6,13 @@ redux-saga is a library that aims to make side effects (i.e. asynchronous things
 ## Pros
 
 - Contrary to redux thunk, you don't end up in callback hell.
-- You can test your asynchronous flows easily and your actions stay pure.
+- You can test your asynchronous flows easily.
+- Your actions stay pure.
 
 
 ## Cons
 
-- Steep learning curve.
-- Depends on ES6 Generators.
+- It depends on ES6 Generators which is relatively new.
 
 
 ## Notes
