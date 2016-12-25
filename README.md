@@ -11,6 +11,7 @@ If you like this repository, please :star: it and help to spread the word! :hear
 1. [Extracting Async Action Creator](./async-action-creator)
 1. [Use Redux Thunk](./redux-thunk)
 1. [Use Redux Saga](./redux-saga)
+1. [Use Redux Logic](./redux-logic)
 
 
 ## Oncoming
@@ -46,13 +47,14 @@ But there is something missing:
 1. No runnable sample projects, just some code snippets.
 1. No sample code for other alternatives, such as:
     1. [Redux Saga](https://github.com/yelouafi/redux-saga)
+    1. [Redux Logic](https://github.com/jeffbski/redux-logic)
 
 This repo is trying to add the missing things:
 
 1. Runnable projects. You can download and run them without modification.
 1. Provide sample code for more alternatives:
     - Redux Saga
-    - Redux Loop
+    - Redux Logic
     - ...
 
 
