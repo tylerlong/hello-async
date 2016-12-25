@@ -7,12 +7,19 @@ const showNotificationWithTimeoutLogic = createLogic({
   process ({ getState, action }, dispatch) {
     const id = nextNotificationId++
     dispatch(showNotification(id, action.text))
+  }
+})
+
+const autoHideNotificationLogic = createLogic({
+  type: 'SHOW_NOTIFICATION',
+  process ({ getState, action }, dispatch) {
     setTimeout(() => {
-      dispatch(hideNotification(id))
+      dispatch(hideNotification(action.id))
     }, 5000)
   }
 })
 
 export default [
-  showNotificationWithTimeoutLogic
+  showNotificationWithTimeoutLogic,
+  autoHideNotificationLogic
 ]
