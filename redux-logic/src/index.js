@@ -2,21 +2,19 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
-import createSagaMiddleware from 'redux-saga'
+import { createLogicMiddleware } from 'redux-logic'
 
 import './index.css'
 import App from './App'
 import reducer from './reducers'
-import rootSaga from './sagas'
+import logic from './logics'
 
-const sagaMiddleware = createSagaMiddleware()
+const logicMiddleware = createLogicMiddleware(logic)
 
 const store = createStore(
   reducer,
-  applyMiddleware(sagaMiddleware)
+  applyMiddleware(logicMiddleware)
 )
-
-sagaMiddleware.run(rootSaga)
 
 ReactDOM.render(
   <Provider store={store}>
