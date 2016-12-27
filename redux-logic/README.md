@@ -5,17 +5,16 @@ Redux middleware for organizing business logic and action side effects.
 
 ## Pros
 
-- No complicated syntax, easy to write and read
+- No complicated syntax, easy to write and read.
+- No major disadvantage that I am aware of.
 
 
 ## Cons
 
-- You can only invoke `dispatch` once in each logic. https://github.com/jeffbski/redux-logic/issues/18
+- Relatively new, community is small.
 
 
 ## Notes
-
-
 
 Ref: https://github.com/jeffbski/redux-logic
 Ref: https://www.youtube.com/watch?v=8a0gaZl9OFc&feature=player_embedded
