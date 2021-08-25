@@ -1,6 +1,6 @@
-# Write Async Code Inline
+# Redux with React Hooks
 
-This is by far the simplest way. Use what the language offers and go for the simplest solution.
+Show the notification using Redux and React Hooks.
 
 ## Pros
 
@@ -11,6 +11,9 @@ This is by far the simplest way. Use what the language offers and go for the sim
 
 - React component contains business logic, bad for reusing. It's not obvious in this demo, but imagine we need to fetch data from server asynchronously.
 - It forces you to duplicate this logic anywhere you want to show a notification.
+- Fails if component is unmounted.
+- Less code and faster than class-based component
+- No `connect` required
 
 ## Notes
 
